@@ -1,7 +1,7 @@
 service mysql start
-mariadb <
-service nginx restart
-service mysql restart
-
-# mysql_secure_installation
-# ufw status  
+service nginx start
+nginx -t
+nginx -s reload
+mysql  < init.sql
+service php7.3-fpm start
+bash
