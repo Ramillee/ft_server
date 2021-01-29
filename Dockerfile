@@ -6,7 +6,7 @@
 #    By: atweek <atweek@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/26 00:40:10 by atweek            #+#    #+#              #
-#    Updated: 2021/01/29 15:57:36 by atweek           ###   ########.fr        #
+#    Updated: 2021/01/29 22:23:30 by atweek           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,6 +41,7 @@ COPY srcs/init.sql ./
 RUN chmod 777 *.sh
 RUN chmod 777 *.sql
 
+RUN rm -rf /var/www/html/index.nginx-debian.html
 RUN chown -R www-data:www-data /var/www/html/wordpress/wp-content/uploads
 EXPOSE 80 443
 CMD bash start.sh
