@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Dockerfile                                         :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: atweek <atweek@student.42.fr>              +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/01/26 00:40:10 by atweek            #+#    #+#              #
-#    Updated: 2021/01/29 22:23:30 by atweek           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 FROM debian:buster
 RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y nginx mariadb-server 
